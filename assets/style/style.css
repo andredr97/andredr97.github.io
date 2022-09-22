@@ -1,109 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,300&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #fff;
+  padding: 0;
+  margin: 0;
   font-family: "Poppins", sans-serif;
-}
-
-aside {
-  display: flex;
-}
-
-nav {
-  position: fixed;
-  width: 280px;
-  height: 100%;
-  background-color: #4b4276;
-  padding: 30px 0;
-  color: #fff;
-}
-
-nav h2 {
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-nav ul li {
-  padding: 15px;
-  list-style: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  border-top: 1px solid rgba(225, 225, 225, 0.05);
-  text-align: justify;
-}
-
-nav ul li a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-}
-
-nav ul li:hover {
-  background-color: #594f8d;
-  font-weight: bold;
+  background-image: url("/assets/image/bg2.jpg");
 }
 
 header {
-  margin-left: 280px;
-  display: flex;
+  display: inline;
 }
 
-.jumbotron {
-  background-image: url(/assets/image/bg1.jpg);
+nav {
   width: 100%;
-  line-height: 300px;
-  text-align: center;
-  letter-spacing: 5px;
+  padding: 10px;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-between;
   color: #fff;
-  text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
-  font-size: 1.8em;
-  background-size: cover;
+}
+
+h1 {
+  margin-left: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 10px;
+  letter-spacing: 1px;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a:hover {
+  font-weight: bold;
 }
 
 main {
-  margin-left: 280px;
-  padding: 15px;
+  margin: 10px;
+  color: #fff;
 }
 
 .card {
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
   border-radius: 5px;
   padding: 20px;
   margin: 20px;
   text-align: justify;
-  line-height: 1, 8em;
 }
 
-h3 {
-  color: #4b4276;
+h2 {
+  color: #fff;
+  letter-spacing: 2px;
 }
 
-p {
-  padding: 5px;
+.left {
+  float: left;
+  width: 60%;
 }
 
-.card img {
-  width: 25%;
-  max-height: 15%;
-  border-radius: 5px;
-  object-position: center;
+aside {
+  float: right;
+  width: 40%;
 }
 
-.card section {
-  padding: 20px;
-  display: flex;
+.profile section {
+  text-align: center;
 }
 
-.card table {
-  margin: 20px;
-  width: 100%;
+.profile img {
+  width: 200px;
+  border-radius: 5%;
+}
+
+.profile table {
+  padding: 5px 0;
+  text-align: center;
+  height: 50%;
+}
+
+.myskill {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .html .fa-brands {
@@ -111,17 +102,10 @@ p {
   padding: 0 5px;
 }
 
-.myskill {
-  padding: 20px;
-  width: 75%;
-  text-align: center;
-  margin: 0 auto;
-}
-
 .html .kotaksatu {
   width: 100%;
   height: 10px;
-  border: 3px solid #594f8d;
+  border: 2px solid #fff;
   border-radius: 100px;
   overflow: hidden;
 }
@@ -140,7 +124,7 @@ p {
 .css .kotaksatu {
   width: 100%;
   height: 10px;
-  border: 3px solid #594f8d;
+  border: 2px solid #fff;
   border-radius: 100px;
   overflow: hidden;
 }
@@ -160,7 +144,7 @@ p {
 .js .kotaksatu {
   width: 100%;
   height: 10px;
-  border: 3px solid #594f8d;
+  border: 2px solid #fff;
   border-radius: 100px;
   overflow: hidden;
 }
@@ -177,76 +161,63 @@ p {
   padding: 0 5px;
 }
 
-footer {
-  margin-left: 280px;
-  width: 100%;
-  padding: 20px;
-  background-color: #594f8d;
-  margin: 0 auto;
-}
-
-footer div {
+.media {
+  float: left;
+  width: 40%;
   margin: 0 auto;
   text-align: center;
-  font-weight: bold;
-  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.8em;
+  color: #4714fc;
 }
 
+.media i {
+  cursor: pointer;
+}
+
+.media i:hover {
+  transform: scale(1.5);
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+/* mobile styles */
 @media screen and (max-width: 992px) {
   nav {
-    background-color: #4b4276;
-    max-height: 20%;
-    align-items: center;
-    width: 100%;
-    padding: 5px;
     display: flex;
     flex-wrap: wrap;
-    position: fixed;
-  }
-  nav h2 {
-    margin: 10px auto;
-  }
-
-  nav a {
-    font-size: 18px;
-    color: #fff;
+    justify-content: center;
+    background-color: black;
+    top: 0;
+    position: sticky;
   }
 
-  nav ul {
+  ul {
+    width: 60%;
     display: flex;
-    margin: 0 auto;
-  }
-  nav li {
-    text-align: justify;
-    margin: 0 5px;
+    justify-content: space-between;
   }
 
-  nav ul li a:hover {
-    font-weight: bold;
-  }
-
-  header {
-    margin: 0 auto;
-  }
-
-  .jumbotron {
-    letter-spacing: 1px;
-    margin-top: 20%;
-  }
-
-  main {
+  aside {
     width: 100%;
-    margin: 0 auto;
-  }
-
-  .profile section {
-    display: inline-block;
     padding: 0;
-    text-align: center;
   }
 
-  .profile table {
-    text-align: center;
-    margin: 0 auto;
+  .media {
+    width: 100%;
+  }
+
+  .left {
+    width: 100%;
   }
 }
